@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./assets/pokeball.svg" type="image/x-icon">
+    <title>Pokémon</title>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/pokemon-logo.png" alt="Pokémon Logo">
+        <nav>
+            <button onclick="getPokemons()">Listar todos os Pokémons</button>
+            <button onclick="getRandomPokemon()">Gerar Pokémon aleatório</button>
+            <div>
+                <input type="text" id="inputBusca" placeholder="Ex: Pikachu">
+                <button id="buttonBusca" onclick="getPokemonByName(inputBusca.value)">Buscar</button>
+            </div>
+        </nav>
+    </header>
+    <main id="pokemons">
+
+    </main>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
